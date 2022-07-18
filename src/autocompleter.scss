@@ -1,0 +1,27 @@
+.autocomplete-widget {
+    z-index: 10000;
+    font-family: Arial,Helvetica,sans-serif;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #c5c5c5;
+    background: #fff;
+
+    &* { font: inherit; }
+
+    .group { background: #eee; }
+
+    .ac-item {
+        font-size: 1em;
+        border: 1px solid #fff;
+        padding: .4em 1em;
+        color: #2b2b2b;
+
+        &:hover:not(.group),
+        &.selected {
+            cursor: pointer;
+            border: 1px solid #003eff;
+	        background: #007fff;
+            color: #fff;
+        }
+    }
+}
